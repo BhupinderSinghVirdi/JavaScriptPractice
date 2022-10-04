@@ -1,0 +1,12 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "description": "warm up activity",
+  "main": "warmupActivity.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bhupinder",
+  "license": "ISC"
+}
+

@@ -1,0 +1,30 @@
+var express = require('express');
+var app = express()
+
+app.get('/', function(req,res){
+    res.send('Hello World');
+});
+
+app.put('/', function(req,res){
+    res.send('Using PUT method!');
+});
+
+app.post('/', function(req,res){
+    res.send('Using POST method!');
+});
+
+app.delete('/', function(req,res){
+    res.send('Using DELETE method!');
+});
+
+app.all('*', function(req,res){
+    res.statusCode(404).send('File Not Found')
+});
+
+app.listen(3000, function(){
+    console.log('Example app listening on port 3000!');
+});
+
+
+
+
