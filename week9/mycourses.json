@@ -1,0 +1,59 @@
+
+[
+  {
+    "_id": {
+      "$oid" : "636ab5c184a06a453a63ecd1"
+    },
+    "courseNumber":"ITE5315",
+    "courseName" : "Web Framework",
+    "credit": "3"
+  },
+  {
+    "_id": {
+      "$oid" : "636ab5c184a06a453a63ecd2"
+    },
+    "courseNumber":"ITC5302",
+    "courseName" : "Project Management",
+    "credit": "3"
+  },
+  {
+    "_id": {
+      "$oid" : "636ab5c184a06a453a63ecd3"
+    },
+    "courseNumber":"ITE5310",
+    "courseName" : "Machine Learning",
+    "credit": "3"
+  },
+  {
+    "_id": {
+      "$oid" : "636ab5c184a06a453a63ecd4"
+    },
+    "courseNumber":"ITE5315",
+    "courseName" : "Asp.Net",
+    "credit": "3"
+  },
+  {
+    "_id": {
+      "$oid" : "636ab5c184a06a453a63ecd5"
+    },
+    "courseNumber":"ITC5301",
+    "courseName" : "Career Connections",
+    "credit": "0"
+  },
+  {
+    "_id": {
+      "$oid" : "636ab5c184a06a453a63ecd6"
+    },
+    "courseNumber":"ITC5333",
+    "courseName" : "Android",
+    "credit": "3"
+  },
+  {
+    "_id": {
+      "$oid" : "636ab5c184a06a453a63ecd7"
+    },
+    "courseNumber":"ITC5334",
+    "courseName" : "IOS",
+    "credit": "3"
+  }
+]

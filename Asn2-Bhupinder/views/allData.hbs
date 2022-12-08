@@ -1,0 +1,36 @@
+<h3>List of all Books</h3>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Status</th>
+    <th>Authors</th>
+    <th>Short Description</th>
+    <th>Page Count</th>
+  </tr>
+  {{#each data}}
+    <tr>
+      {{! Step-8: This #if expression is for step 8, skips the books where page count is 0}}
+      {{#if this.pageCount}}
+        <tr>
+          <td>{{this._id}}</td>
+          <td>{{this.title}}</td>
+          <td>{{this.status}}</td>
+          <td>{{this.authors}}</td>
+          <td>{{this.shortDescription}}</td>
+          <td>{{this.pageCount}}</td>
+        </tr>
+      {{/if}}
+      {{! Step-9: This custom helper call changes the pageCount from 0 to zero. Also highlights the books which have zero pageCount}}
+      {{#unless this.pageCount}}
+        {{! Defjining this set of rows as a different class to add the background color along with strong characters.}}
+        <td bgcolor="red">{{#strong}}{{this._id}}{{/strong}}</td>
+        <td bgcolor="red">{{#strong}}{{this.title}}{{/strong}}</td>
+        <td bgcolor="red">{{#strong}}{{this.status}}{{/strong}}</td>
+        <td bgcolor="red">{{#strong}}{{this.authors}}{{/strong}}</td>
+        <td bgcolor="red">{{#strong}}{{this.shortDescription}}{{/strong}}</td>
+        <td bgcolor="red">{{#strong}}{{changeZero this.pageCount}}{{/strong}}</td>
+      {{/unless}}
+    </tr>
+  {{/each}}
+</table>

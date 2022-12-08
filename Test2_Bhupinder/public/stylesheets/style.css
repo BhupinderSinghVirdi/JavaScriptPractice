@@ -1,0 +1,25 @@
+body {
+    padding: 50px;
+    font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+    text-align: center;
+    height: 600px;
+  }
+
+header, footer{
+    size: 200px;
+    padding: 20px;
+    font: 20px 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: grey;
+    color: blue;
+    text-align: center;
+}
+
+table{
+    table-layout: fixed;
+    text-align: center;
+    align-self: center;
+}
+
+title {
+    font-weight: 500;
+}

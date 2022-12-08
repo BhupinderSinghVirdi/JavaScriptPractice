@@ -1,0 +1,57 @@
+<p>This is week 7 class activity</p>
+<h2>Sample Template: {{sample}}</h2>
+<h2>calculation Template: {{calculation 20}}</h2>
+<h2>today is : {{#strong}} Tuesday {{/strong}} </h2>
+<tr>
+  <td>{{data.name}}</td>
+  <td>{{data.age}}</td>
+  <td>{{data.occupation}}</td>
+  <td>{{data.company}}</td>
+</tr>
+
+<h3>list of data</h3>
+<ul>
+  {{#each data}}    
+  <li>{{this.name}}</li>
+  {{/each}}
+</ul>
+
+
+<h4>table content</h4>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Occupation</th>
+    <th>Company</th>
+  </tr>
+  {{#each data}}
+    {{#if this.name}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.age}}</td>
+      <td>{{this.occupation}}</td>
+      <td>{{this.company}}</td>
+    </tr>
+    {{/if}}
+  {{/each}}
+</table>
+
+
+<h4>table content</h4>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Occupation</th>
+    <th>Company</th>
+  </tr>
+  {{#each data}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.age}}</td>
+      <td>{{this.occupation}}</td>
+      <td>{{this.company}}</td>
+    </tr>
+  {{/each}}
+</table>

@@ -1,0 +1,15 @@
+{{!--  hbs file for rendering data --}}
+<table border="1">
+    <tr>
+        <th>Email</th>
+        <th>IPAdress</th>
+        <th>Payment</th>
+    </tr>
+    {{#each data}}
+    <tr>
+        <td>{{this.email}}</td>
+        <td>{{this.ip_address}}</td>
+        <td>{{this.Payment}}</td>
+    </tr>
+    {{/each}}
+</table>

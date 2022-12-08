@@ -1,0 +1,17 @@
+{
+  "name": "test2_bhupinder",
+  "version": "1.0.0",
+  "description": "test 2 3rd sem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bhupinder",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-validator": "^6.14.2",
+    "nodemon": "^2.0.20"
+  }
+}

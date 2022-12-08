@@ -1,0 +1,20 @@
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Status</th>
+    <th>Authors</th>
+    <th>Short Description</th>
+    <th>Page Count</th>
+  </tr>
+  {{#each data}}
+    <tr>
+      <td>{{this._id}}</td>
+      <td>{{this.title}}</td>
+      <td>{{this.status}}</td>
+      <td>{{this.authors}}</td>
+      <td>{{this.shortDescription}}</td>
+      <td>{{this.pageCount}}</td>
+    </tr>
+  {{/each}}
+</table>
